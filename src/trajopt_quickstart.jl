@@ -101,10 +101,10 @@ Umat = hcat(Vector.(U)...)
 
 # Extract out individual states and controls
 x1 = states(prob, 2)
-# u1 = controls(prob, 1)
+u1 = controls(prob, 1)
 
 p = plot(x1)
-savefig(p, "plots/pendulum_trajectories.pdf")
+savefig(p, "plots/x1.pdf")
 
 ## Constraints
 # `ConstraintList` supports indexing (and iteration):
