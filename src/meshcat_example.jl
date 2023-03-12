@@ -5,7 +5,6 @@ using MeshCatMechanisms
 vis = Visualizer()
 open(vis)  # open the visualizer in a separate tab/window
 wait(vis)
-# render(vis) # render the visualizer here inside the jupyter notebook
 
 urdf = joinpath(dirname(pathof(MeshCatMechanisms)), "..", "test", "urdf", "Acrobot.urdf")
 robot = parse_urdf(urdf)
